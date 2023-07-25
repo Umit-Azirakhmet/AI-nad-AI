@@ -5,7 +5,7 @@ import { NextResponse } from 'next/server'
 export const dynamic = 'force-dynamic';
 
 /**
- * Retrieves a random Jeopardy question
+ * Retrieves a random question
  */
 export async function GET() {
   const res = await axios.get('https://jservice.io/api/random')

@@ -8,12 +8,13 @@ import cx from 'classnames'
 import { AcademicCapIcon } from '@heroicons/react/24/outline'
 import axios from 'axios'
 import toast, { Toaster } from 'react-hot-toast'
+import { useRouter } from "next/router";
 
 // default first message to display in UI (not necessary to define the prompt)
 export const initialMessages = [
   {
     role: 'assistant',
-    content: 'Hi! I am a Jeopardy expert. UMIT LOX Fire away with trivia questions!',
+    content: 'Hi! I am AInadAI. With me, you can mirror and chat with anyone! (for now, I am Nursultan Nazarbayev)',
   },
 ]
 
@@ -38,7 +39,7 @@ const InputMessage = ({ input, setInput, sendMessage, loading }) => {
       const question_data = res.data
 
       setQuestion(question_data)
-      setInput(`The category is "${question_data.category}". ${question_data.question}`)
+      setInput(`What do you think of "${question_data.category}"?`)
     } catch (err) {
       setQuestionError(err.message)
     } finally {
@@ -69,7 +70,7 @@ const InputMessage = ({ input, setInput, sendMessage, loading }) => {
       >
         <div className="w-4 h-4">
           <AcademicCapIcon />
-        </div> {'Generate a Jeopardy question for me'}
+        </div> {'Generate a question for me'}
       </button>
       <div className="mx-2 my-4 flex-1 w-full md:mx-4 md:mb-[52px] lg:max-w-2xl xl:max-w-3xl">
         <div className="relative mx-2 flex-1 flex-col rounded-md border-black/10 bg-white shadow-[0_0_10px_rgba(0,0,0,0.10)] sm:mx-4">

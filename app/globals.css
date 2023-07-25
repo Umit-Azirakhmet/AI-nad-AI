@@ -1,3 +1,51 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    background-color: #eeeeee;
+}
+
+@media only screen and (max-width: 720px) {
+    .bg-pic {
+        height: 100%;
+        position: absolute;
+    }
+}
+
+.bg-pic {
+    position: absolute;
+    top: 0;
+    z-index: -111;
+    filter: brightness(70%);
+    height: 810px;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #cacaca;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* styles/global.css */
+
+.video-container {
+    position: relative;
+}

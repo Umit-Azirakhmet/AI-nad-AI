@@ -1,0 +1,42 @@
+/* Landing.css */
+
+/* .wrapper {
+  background-image: url(/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+} */
+
+/* background-repeat: no-repeat;
+  background-position: center; */
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/background2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.landing-container {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent dark background */
+  padding: 20px;
+  /* Adjust padding as needed */
+  border-radius: 10px;
+  /* Optional: Add border radius for rounded corners */
+}
+
+
+.landing-container p {
+  color: beige;
+}
+
+.landing-container h1 {
+  color: beige;
+}
