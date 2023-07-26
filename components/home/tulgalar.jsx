@@ -66,7 +66,7 @@ const tulgalar = [
 
 const Tulga = ({ tulga }) => {
     return (
-        <Link href={`/chat/${tulga.name}`}>
+        <Link href={"/chat"}>       
             <div
                 className="video-container space-y-4 hover:scale-105 duration-200"
                 style={{
