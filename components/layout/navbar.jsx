@@ -22,7 +22,7 @@ export default function NavBar({ session }) {
         <div className="mx-5 flex h-16 max-w-screen-xl items-center justify-between xl:mx-auto">
           <Link href="/" className="flex items-center font-display text-2xl">
             <Image
-              src="/logot.png"
+              src="/logot9.png"
               alt="ICON logo"
               width="70"
               height="70"
