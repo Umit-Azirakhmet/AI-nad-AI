@@ -5,7 +5,7 @@ import Link from "next/link";
 // import Tree from "./components/Tree.js";
 import "@/app/globals.css"
 import Chat from "@/components/home/chat"
-
+//sdkgsmgsdkmlsdgmslgksdg
 const tulgalar = [
     {
         name: "Akhmet Baitursynov",
